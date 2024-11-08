@@ -26,5 +26,18 @@ namespace Practice.Application.Services
         {
             return await _practiceRepository.GetDepartmentAndJobEmployees();
         }
+        public async Task<string> GetCityWithLowestTotalSalaryAsync()
+        {
+            return await _practiceRepository.GetCityWithLowestTotalSalaryAsync();
+        }
+        public async Task<List<Employee>> GetEmployeesWithManagersHiredInJanuaryAndTitleMore15()
+        {
+            return await _practiceRepository.GetEmployeesWithManagersHiredInJanuaryAndTitleMore15();
+        }
+
+        public async Task<List<string>> GetFirstNamesOfEmployeesInEuropeAsync()
+        {
+            return await _practiceRepository.GetFirstNamesOfEmployeesInEuropeAsync();
+        }
     }
 }
