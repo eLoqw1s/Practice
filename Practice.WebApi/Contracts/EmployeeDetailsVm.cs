@@ -1,6 +1,6 @@
 ﻿namespace Practice.WebApi.Contracts
 {
-    public record FirstQueryDetailsVm
+    public record EmployeeDetailsVm
     (
         string FirstName,
         string SecondName,

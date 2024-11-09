@@ -7,9 +7,14 @@ namespace Practice.Application.Interfaces
     {
         Task<List<Region>> GetRegions();
         Task<List<Employee>> GetEmployeesWithManagersHiredIn2023();
-        Task<List<SecondDto>> GetDepartmentAndJobEmployees();
-        Task<string> GetCityWithLowestTotalSalaryAsync();
+        Task<List<EmployeeInfoThreeFieldsDto>> GetDepartmentAndJobEmployees();
+        Task<string> GetCityWithLowestTotalSalary();
         Task<List<Employee>> GetEmployeesWithManagersHiredInJanuaryAndTitleMore15();
-        Task<List<string>> GetFirstNamesOfEmployeesInEuropeAsync();
+        Task<List<string>> GetFirstNamesOfEmployeesInEurope();
+        Task<List<EmployeeDetailDto>> GetEmployeeDetails();
+        Task<List<RegionEmployeeCountDto>> GetRegionsWithEmployeeCount();
+        Task<List<DepartmentMinMaxDto>> GetDepartmentSalaryAndEmployeeStats();
+        Task<List<EmployeePhoneFormat>> GetEmployeesPhoneInfo();
+        Task<List<Employee>> GetEmployeesInDepartmentAdministration();
     }
 }

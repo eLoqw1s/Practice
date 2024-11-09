@@ -1,6 +1,6 @@
 ﻿namespace Practice.Application.DTO
 {
-    public record SecondDto
+    public record EmployeeInfoThreeFieldsDto
     (
         string FirstName,
         string JobTitle,

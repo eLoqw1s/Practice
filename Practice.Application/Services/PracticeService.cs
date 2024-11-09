@@ -22,22 +22,42 @@ namespace Practice.Application.Services
         {
             return await _practiceRepository.GetEmployeesWithManagersHiredIn2023();
         }
-        public async Task<List<SecondDto>> GetDepartmentAndJobEmployees()
+        public async Task<List<EmployeeInfoThreeFieldsDto>> GetDepartmentAndJobEmployees()
         {
             return await _practiceRepository.GetDepartmentAndJobEmployees();
         }
-        public async Task<string> GetCityWithLowestTotalSalaryAsync()
+        public async Task<string> GetCityWithLowestTotalSalary()
         {
-            return await _practiceRepository.GetCityWithLowestTotalSalaryAsync();
+            return await _practiceRepository.GetCityWithLowestTotalSalary();
         }
         public async Task<List<Employee>> GetEmployeesWithManagersHiredInJanuaryAndTitleMore15()
         {
             return await _practiceRepository.GetEmployeesWithManagersHiredInJanuaryAndTitleMore15();
         }
 
-        public async Task<List<string>> GetFirstNamesOfEmployeesInEuropeAsync()
+        public async Task<List<string>> GetFirstNamesOfEmployeesInEurope()
         {
-            return await _practiceRepository.GetFirstNamesOfEmployeesInEuropeAsync();
+            return await _practiceRepository.GetFirstNamesOfEmployeesInEurope();
+        }
+        public async Task<List<EmployeeDetailDto>> GetEmployeeDetails()
+        {
+            return await _practiceRepository.GetEmployeeDetails();
+        }
+        public async Task<List<RegionEmployeeCountDto>> GetRegionsWithEmployeeCount()
+        {
+            return await _practiceRepository.GetRegionsWithEmployeeCount();
+        }
+        public async Task<List<DepartmentMinMaxDto>> GetDepartmentSalaryAndEmployeeStats()
+        {
+            return await _practiceRepository.GetDepartmentSalaryAndEmployeeStats();
+        }
+        public async Task<List<EmployeePhoneFormat>> GetEmployeesPhoneInfo()
+        {
+            return await _practiceRepository.GetEmployeesPhoneInfo();
+        }
+        public async Task<List<Employee>> GetEmployeesInDepartmentAdministration()
+        {
+            return await _practiceRepository.GetEmployeesInDepartmentAdministration();
         }
     }
 }
